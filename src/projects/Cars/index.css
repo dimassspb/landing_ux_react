@@ -1,0 +1,61 @@
+.cars-parent {
+    height: 100vh;
+    background-color: black;
+}
+
+.part-1 {
+    height: 100%;
+}
+
+.part-1 img {
+    height: 100% !important;
+    width: 100% !important;
+    transform: rotate(10deg);
+}
+
+.part-2 {
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.part-2 img {
+    height: 100% !important;
+    width: 100% !important;
+    transform: rotate(10deg);
+}
+
+.text-separator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-separator:hover {
+    color: red;
+    text-shadow: 2px 2px 15px red;
+}
+
+.cars-text {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+    font-size: 60px;
+}
+
+.cars-text:hover {
+    color: red;
+    text-shadow: 2px 2px 15px red;
+}
+
+@media screen and (max-width: 600px) {
+  .cars-parent {
+    /* height: max-content; */
+    background-color: black;
+}
+}

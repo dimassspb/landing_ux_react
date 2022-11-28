@@ -1,0 +1,41 @@
+.glowing-parent {
+    height: 100vh;
+    background-color: #222222;
+}
+
+.glowing-text-part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glowing-text-part h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.glowing-text-part p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.glowing-text-part:hover {
+  cursor: pointer;
+    color: rgba(255, 255, 255, 0.89);
+    text-shadow: 3px 3px 15px;
+}
+
+@media screen and (max-width: 600px) {
+.glowing-text-part h1 {
+    font-size: 30px;
+
+}
+
+.glowing-text-part p {
+    font-size: 15px;
+
+}
+}
